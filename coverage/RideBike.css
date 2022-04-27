@@ -1,0 +1,39 @@
+    @font-face {
+        font-family: "Audiowide-Regular";
+        src: url("../font/Audiowide-Regular.ttf");
+    }
+    
+    * {
+        font-family: "Audiowide-Regular";
+    }
+    
+    body {
+        background-image: url("/Doc/Image/biker-burnout_1596922196-2048x1152.jpg");
+        text-align: center;
+    }
+    
+    .game-intro {
+        float: left;
+        padding: 0% 3%;
+    }
+    
+    .game-intro img {
+        width: 400px;
+        height: auto;
+    }
+    
+    body button {
+        font-size: 30px;
+        padding: 20px 40px;
+        border: 0;
+        box-shadow: 0;
+        border-radius: 100px;
+        margin-bottom: 10px;
+        color: red;
+        background-color: black;
+    }
+    
+    #game-board {
+        float: left;
+        padding: 30px 20px;
+    }
