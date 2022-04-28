@@ -97,7 +97,7 @@ class Game {
     }
     checkGameWin() {
         const score = Math.floor(this.frames / 60);
-        if (score >= 30) {
+        if (score >= 60) {
             this.won();
         }
     }
@@ -262,7 +262,7 @@ class Game2 extends Game {
     }
     checkGameWin() {
         const score = Math.floor(this.frames / 60);
-        if (score >= 30) {
+        if (score >= 60) {
             this.won();
         }
     }

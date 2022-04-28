@@ -44,7 +44,7 @@ class Enemy2 extends Enemy {
         this.height = 90;
         this.img = new Image();
 
-        this.speedY = 4;
+        this.speedY = 5;
     }
 
     left() {
@@ -117,7 +117,7 @@ class Enemy4 extends Enemy {
         this.height = 90;
         this.img = new Image();
 
-        this.speedY = 5;
+        this.speedY = 6;
     }
     left() {
         return this.x;
