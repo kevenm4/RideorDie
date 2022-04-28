@@ -3,6 +3,17 @@ class Game {
         this.canvas = document.getElementById("canvas");
         this.ctx = this.canvas.getContext("2d");
         this.background = new Image();
+        const gameover = new Image();
+        gameover.addEventListener("load", () => {
+            this.gameover = gameover;
+        });
+        gameover.src = "./Doc/assets/Image/Busted.png";
+        const gamewin = new Image();
+        gamewin.addEventListener("load", () => {
+            this.gamewin = gamewin;
+        });
+        gamewin.src = "./Doc/assets/Image/motoescaped.png";
+
         this.x = 0;
         this.y = 0;
         this.width = 600;
@@ -86,7 +97,7 @@ class Game {
     }
     checkGameWin() {
         const score = Math.floor(this.frames / 60);
-        if (score >= 50) {
+        if (score >= 30) {
             this.won();
         }
     }
@@ -99,8 +110,9 @@ class Game {
         this.ctx.fillStyle = "black";
         this.ctx.fillRect(0, 0, this.width, this.height);
         this.ctx.fillStyle = "red";
-        this.ctx.fillText(`GAME OVER`, 190, 300);
-        this.ctx.fillText(`FINAL SCORE: ${km}`, 190, 400);
+        this.ctx.fillText(`BUSTED`, 230, 300);
+        this.ctx.drawImage(this.gameover, 190, 250, 300, 300);
+        this.ctx.fillText(`FINAL SCORE: ${km}`, 160, 500);
     }
     won() {
         clearInterval(this.intervalId);
@@ -110,8 +122,9 @@ class Game {
         this.ctx.fillStyle = "black";
         this.ctx.fillRect(0, 0, this.width, this.height);
         this.ctx.fillStyle = "red";
-        this.ctx.fillText("YOU WON", 190, 300);
-        this.ctx.fillText(`FINAL SCORE: ${km}`, 190, 400);
+        this.ctx.fillText("ESCAPED", 230, 300);
+        this.ctx.drawImage(this.gamewin, 190, 250, 300, 300);
+        this.ctx.fillText(`FINAL SCORE: ${km}`, 160, 500);
     }
 
     createBoost() {
@@ -140,7 +153,7 @@ class Game {
         this.ctx.fillText(`KM: ${score}`, 100, 30);
     }
     drawBackground() {
-        this.background.src = "./Doc/assets/Image/road_1.png";
+        this.background.src = "/Doc/assets/Image/road_1.png";
         this.ctx.drawImage(
             this.background,
             this.x,
@@ -157,6 +170,17 @@ class Game2 extends Game {
         this.canvas = document.getElementById("canvas");
         this.ctx = this.canvas.getContext("2d");
         this.background = new Image();
+        const gameover = new Image();
+        gameover.addEventListener("load", () => {
+            this.gameover = gameover;
+        });
+        gameover.src = "./Doc/assets/Image/Busted.png";
+        const gamewin2 = new Image();
+        gamewin2.addEventListener("load", () => {
+            this.gamewin2 = gamewin2;
+        });
+        gamewin2.src = "./Doc/assets/Image/carescaped.png";
+
         this.x = 0;
         this.y = 0;
         this.width = 600;
@@ -238,7 +262,7 @@ class Game2 extends Game {
     }
     checkGameWin() {
         const score = Math.floor(this.frames / 60);
-        if (score >= 50) {
+        if (score >= 30) {
             this.won();
         }
     }
@@ -250,8 +274,9 @@ class Game2 extends Game {
         this.ctx.fillStyle = "black";
         this.ctx.fillRect(0, 0, this.width, this.height);
         this.ctx.fillStyle = "red";
-        this.ctx.fillText(`GAME OVER`, 190, 300);
-        this.ctx.fillText(`FINAL SCORE: ${km}`, 190, 400);
+        this.ctx.fillText(`BUSTED`, 230, 300);
+        this.ctx.drawImage(this.gameover, 190, 250, 300, 300);
+        this.ctx.fillText(`FINAL SCORE: ${km}`, 160, 500);
     }
     won() {
         clearInterval(this.intervalId);
@@ -261,8 +286,9 @@ class Game2 extends Game {
         this.ctx.fillStyle = "black";
         this.ctx.fillRect(0, 0, this.width, this.height);
         this.ctx.fillStyle = "red";
-        this.ctx.fillText("YOU WON", 190, 300);
-        this.ctx.fillText(`FINAL SCORE: ${km}`, 190, 400);
+        this.ctx.fillText(`ESCAPED`, 230, 300);
+        this.ctx.drawImage(this.gamewin2, 190, 250, 300, 300);
+        this.ctx.fillText(`FINAL SCORE: ${km}`, 160, 500);
     }
     createBoost() {
         if (this.frames % 600 === 0) {
