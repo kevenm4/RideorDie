@@ -9,6 +9,7 @@
 
 body {
     background-image: url("./Doc/assets/Image/biker-burnout_1596922196-2048x1152.jpg");
+    background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -36,4 +37,26 @@ body button {
 #game-board {
     float: left;
     padding: 30px 20px;
+}
+
+.game-info h1 {
+    padding: 100px;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+.game-info img {
+    height: auto;
+    width: 200px;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+}
+
+.players img {
+    width: 70px;
+    height: 100px;
 }
