@@ -1,4 +1,5 @@
-![logo](.)
+![logo](./Doc/assets/Image/logo%20ironhack.jpg)
+
 # Ride Or Die
 
 ## Introduction
@@ -13,9 +14,8 @@ git clone https://kevenm4.github.io/RideorDie/
 
 Open index.html
 
-### Instructions 
+### Instructions
 
-Use arrows to move where you want inside the game.
+Use the arrows to move where you want inside the game.
 
 LET´S GOOOOO.
-
