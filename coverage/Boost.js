@@ -30,7 +30,7 @@ class Boost {
     }
 
     draw() {
-        this.img.src = "/Doc/assets/Image/416-4160503_wordpress-speed-boost-clipart.png";
+        this.img.src = "./Doc/assets/Image/416-4160503_wordpress-speed-boost-clipart.png";
         this.game.ctx.drawImage(this.img, this.x, this.y, this.width, this.height);
     }
 }

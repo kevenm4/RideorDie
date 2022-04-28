@@ -29,7 +29,7 @@ class Enemy {
     }
 
     draw() {
-        this.img.src = "/Doc/assets/Image/police.png";
+        this.img.src = "./Doc/assets/Image/police.png";
         this.game.ctx.drawImage(this.img, this.x, this.y, this.width, this.height);
     }
 }
@@ -66,7 +66,7 @@ class Enemy2 extends Enemy {
     }
 
     draw() {
-        this.img.src = "/Doc/assets/Image/car-yellow.png";
+        this.img.src = "./Doc/assets/Image/car-yellow.png";
         this.game.ctx.drawImage(this.img, this.x, this.y, this.width, this.height);
     }
 }
@@ -102,7 +102,7 @@ class Enemy3 extends Enemy {
     }
 
     draw() {
-        this.img.src = "/Doc/assets/Image/police2.png";
+        this.img.src = "./Doc/assets/Image/police2.png";
         this.game2.ctx.drawImage(this.img, this.x, this.y, this.width, this.height);
     }
 }
@@ -138,7 +138,7 @@ class Enemy4 extends Enemy {
     }
 
     draw() {
-        this.img.src = "/Doc/assets/Image/car-red.png";
+        this.img.src = "./Doc/assets/Image/car-red.png";
         this.game2.ctx.drawImage(this.img, this.x, this.y, this.width, this.height);
     }
 }

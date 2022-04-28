@@ -140,7 +140,7 @@ class Game {
         this.ctx.fillText(`KM: ${score}`, 100, 30);
     }
     drawBackground() {
-        this.background.src = "/Doc/assets/Image/road_1.png";
+        this.background.src = "./Doc/assets/Image/road_1.png";
         this.ctx.drawImage(
             this.background,
             this.x,
@@ -288,7 +288,7 @@ class Game2 extends Game {
         this.ctx.fillText(`KM: ${score}`, 100, 30);
     }
     drawBackground() {
-        this.background.src = "/Doc/assets/Image/road_1.png";
+        this.background.src = "./Doc/assets/Image/road_1.png";
         this.ctx.drawImage(
             this.background,
             this.x,

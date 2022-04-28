@@ -11,7 +11,7 @@ class Player {
     }
 
     draw() {
-        this.img.src = "/Doc/assets/Image/bikes_0-removebg-preview.png";
+        this.img.src = "./Doc/assets/Image/bikes_0-removebg-preview.png";
         this.game.ctx.drawImage(this.img, this.x, this.y, this.width, this.height);
     }
 
@@ -77,7 +77,7 @@ class Player2 extends Player {
         this.speedX = 30;
     }
     draw() {
-        this.img.src = "/Doc/assets/Image/car-sedan.png";
+        this.img.src = "./Doc/assets/Image/car-sedan.png";
         this.game.ctx.drawImage(this.img, this.x, this.y, this.width, this.height);
     }
 

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Audiowide-Regular";
-    src: url("../font/Audiowide-Regular.ttf");
+    src: url("./Doc/assets/font/Audiowide-Regular.ttf");
 }
 
 * {
@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url("/Doc/assets/Image/biker-burnout_1596922196-2048x1152.jpg");
+    background-image: url("./Doc/assets/Image/biker-burnout_1596922196-2048x1152.jpg");
     text-align: center;
 }
 
